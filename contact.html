@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Pietro Cammise</title>
+  <meta name="description" content="Contatta Pietro Cammise: AI/ML Engineer disponibile per collaborazioni su data analytics, automazioni Python e Claude AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="prompt">~/</span><span class="nav-name">pietro-cammise</span><span class="cursor-blink">▋</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="skills.html">skills</a></li>
+      <li><a href="contact.html" class="active">contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </nav>
+
+  <main class="page-main">
+    <div class="page-header">
+      <span class="page-tag">05 / contact</span>
+      <h1>Contatti<span class="accent">.</span></h1>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- INFO -->
+      <div class="contact-left">
+        <p class="contact-intro">
+          Hai un progetto su data analytics, un'automazione da costruire
+          o vuoi integrare Claude nel tuo workflow?<br>
+          <span style="color:var(--green)">Scrivimi.</span>
+        </p>
+
+        <div class="contact-items">
+
+          <div class="contact-item">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <span class="ci-label">Email</span>
+              <span class="ci-val">
+                <a href="mailto:pietro_cam@hotmail.com">pietro_cam@hotmail.com</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon">💻</div>
+            <div>
+              <span class="ci-label">GitHub</span>
+              <span class="ci-val">
+                <a href="https://github.com/Auticad" target="_blank" rel="noopener">github.com/Auticad</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon">🔗</div>
+            <div>
+              <span class="ci-label">LinkedIn</span>
+              <span class="ci-val">
+                <a href="https://linkedin.com/in/pietrocammise" target="_blank" rel="noopener">linkedin.com/in/pietrocammise</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon">🌐</div>
+            <div>
+              <span class="ci-label">CV Online</span>
+              <span class="ci-val">
+                <a href="https://auticad.github.io/cv_cammise/" target="_blank" rel="noopener">auticad.github.io/cv_cammise</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon">🌍</div>
+            <div>
+              <span class="ci-label">Modalità lavoro</span>
+              <span class="ci-val">Remoto · Italia</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="availability-box">
+          <span class="avail-dot"></span>
+          <div>
+            <strong>Aperto a nuove collaborazioni</strong>
+            <p>Rispondo entro 24 ore lavorative</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-right">
+        <div class="form-terminal">
+          <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">send_message.sh</span>
+          </div>
+          <div class="form-body">
+
+            <div class="form-group">
+              <label for="f-name">// nome *</label>
+              <input type="text" id="f-name" placeholder="Il tuo nome" autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="f-email">// email *</label>
+              <input type="email" id="f-email" placeholder="tua@email.com" autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="f-subject">// argomento</label>
+              <select id="f-subject">
+                <option value="">— seleziona —</option>
+                <option value="data">Data Analytics / BI</option>
+                <option value="claude">Claude Code / Automazioni AI</option>
+                <option value="backend">Web App / Backend Python</option>
+                <option value="design">Progettazione CAD / 3D</option>
+                <option value="altro">Altro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="f-message">// messaggio *</label>
+              <textarea id="f-message" rows="5" placeholder="Descrivi il progetto o la richiesta..."></textarea>
+            </div>
+
+            <button class="btn-primary" onclick="sendMessage()" style="width:100%; text-align:center;">
+              $ send_message
+            </button>
+
+            <div class="form-feedback" id="form-feedback"></div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

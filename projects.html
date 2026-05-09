@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Pietro Cammise</title>
+  <meta name="description" content="Progetti reali di Pietro Cammise su GitHub: Flask, Django, Python data lab, TKinter, portfolio CAD, CV interattivo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="prompt">~/</span><span class="nav-name">pietro-cammise</span><span class="cursor-blink">▋</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="projects.html" class="active">projects</a></li>
+      <li><a href="skills.html">skills</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </nav>
+
+  <main class="page-main">
+    <div class="page-header">
+      <span class="page-tag">03 / projects</span>
+      <h1>Progetti<span class="accent">.</span></h1>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Tutti</button>
+      <button class="filter-btn" data-filter="python">Python</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="data">Data</button>
+      <button class="filter-btn" data-filter="design">Design / CAD</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Django full-stack — FEATURED -->
+      <div class="project-card featured" data-category="python web">
+        <div class="project-header">
+          <span class="project-tag featured-tag">★ Featured</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h2>Django-myproject</h2>
+        <p>Boilerplate full-stack Django 5.2 LTS: blog con sistema di commenti, REST API con Django REST Framework,
+           containerizzazione Docker e pipeline CI/CD su GitHub Actions. Punto di partenza pronto per il deploy.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Django 5.2</span><span>REST API</span><span>Docker</span><span>CI/CD</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Auticad/Django-myproject" target="_blank" rel="noopener" class="proj-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <!-- Flask web apps -->
+      <div class="project-card" data-category="python web">
+        <div class="project-header">
+          <span class="project-tag">Web / Flask</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h2>flask-web-apps</h2>
+        <p>App Flask con autenticazione completa: registrazione, login, carrello servizi e gestione budget.
+           Stack: SQLAlchemy ORM, flask-login, bcrypt per hashing password, WTForms per la validazione.</p>
+        <div class="project-stack">
+          <span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>bcrypt</span><span>WTForms</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Auticad/flask-web-apps" target="_blank" rel="noopener" class="proj-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <!-- Python data lab -->
+      <div class="project-card" data-category="python data">
+        <div class="project-header">
+          <span class="project-tag">Data / Analytics</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h2>python-data-lab</h2>
+        <p>Raccolta di esercizi pratici su Python, T-SQL e Jupyter Notebook per analisi dati e automazione.
+           Copre pandas, query SQL Server, manipolazione di dataset reali e visualizzazioni.</p>
+        <div class="project-stack">
+          <span>Python</span><span>T-SQL</span><span>Jupyter</span><span>pandas</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Auticad/python-data-lab" target="_blank" rel="noopener" class="proj-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <!-- TKinter dashboard -->
+      <div class="project-card" data-category="python">
+        <div class="project-header">
+          <span class="project-tag">Desktop App</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h2>TKinter-dashboard</h2>
+        <p>Applicazioni desktop Python con tkinter: gestione utenti CRUD con SQLite e bcrypt,
+           todo list con autosave. Architettura modulare separata in UI, logica dati e utility.</p>
+        <div class="project-stack">
+          <span>Python</span><span>tkinter</span><span>SQLite</span><span>bcrypt</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Auticad/TKinter-dashboard" target="_blank" rel="noopener" class="proj-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <!-- Portfolio CAD -->
+      <div class="project-card" data-category="design">
+        <div class="project-header">
+          <span class="project-tag">Design / CAD</span>
+          <span class="project-year">2023</span>
+        </div>
+        <h2>portfolio-cammise</h2>
+        <p>Portfolio di progettazione 2D/3D: AutoCAD, Revit Architettura, Fusion 360 e Inventor.
+           Stampa 3D (FDM/SLA/SLS), rendering fotorealistico e product design.
+           Certificazione Autodesk Certified User.</p>
+        <div class="project-stack">
+          <span>AutoCAD</span><span>Revit</span><span>Fusion 360</span><span>HTML</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Auticad/portfolio-cammise" target="_blank" rel="noopener" class="proj-link">↗ GitHub</a>
+        </div>
+      </div>
+
+      <!-- CV interattivo -->
+      <div class="project-card" data-category="web design">
+        <div class="project-header">
+          <span class="project-tag">Web / CV</span>
+          <span class="project-year">2023</span>
+        </div>
+        <h2>cv_cammise</h2>
+        <p>CV interattivo pubblicato su GitHub Pages. Scritto in HTML e CSS puri, senza dipendenze esterne.
+           Ottimizzato per la leggibilità su desktop e mobile.</p>
+        <div class="project-stack">
+          <span>HTML</span><span>CSS</span><span>GitHub Pages</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Auticad/cv_cammise" target="_blank" rel="noopener" class="proj-link">↗ GitHub</a>
+          <a href="https://auticad.github.io/cv_cammise/" target="_blank" rel="noopener" class="proj-link">→ Live</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

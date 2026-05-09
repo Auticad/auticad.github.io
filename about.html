@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — Pietro Cammise</title>
+  <meta name="description" content="Chi è Pietro Cammise: AI/ML Engineer con focus su data analytics, automazioni Python e Claude AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="prompt">~/</span><span class="nav-name">pietro-cammise</span><span class="cursor-blink">▋</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html" class="active">about</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="skills.html">skills</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </nav>
+
+  <main class="page-main">
+    <div class="page-header">
+      <span class="page-tag">02 / about</span>
+      <h1>Chi sono<span class="accent">.</span></h1>
+    </div>
+
+    <section class="about-layout">
+
+      <!-- SINISTRA -->
+      <div class="about-left">
+
+        <div class="about-card">
+          <h2 class="about-title"><span class="prompt">$ </span>profilo</h2>
+          <p class="about-lead">
+            Sono Pietro Cammise, AI/ML Engineer con focus su
+            <strong style="color:var(--green)">data analytics</strong>,
+            <strong style="color:var(--green)">automazioni Python</strong> e
+            integrazione di strumenti AI nel lavoro quotidiano.
+            Uso <strong style="color:var(--green)">Claude Code</strong> e
+            <strong style="color:var(--green)">Claude Desktop</strong> come strumenti
+            centrali del mio workflow di sviluppo.
+          </p>
+          <div class="about-highlights">
+            <div class="about-highlight">
+              <span class="ah-k">focus</span>
+              <span class="ah-v">data analytics, BI, automazioni AI</span>
+            </div>
+            <div class="about-highlight">
+              <span class="ah-k">stack</span>
+              <span class="ah-v">Python · SQL Server · dbt · Claude · Docker</span>
+            </div>
+            <div class="about-highlight">
+              <span class="ah-k">strumenti</span>
+              <span class="ah-v">Notion · Obsidian · Google Workspace</span>
+            </div>
+            <div class="about-highlight">
+              <span class="ah-k">modalità</span>
+              <span class="ah-v">remoto · Italia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <h2 class="about-title"><span class="prompt">$ </span>mission</h2>
+          <ul class="about-list">
+            <li><strong>Rigore prima dell'entusiasmo</strong>: nessuna affermazione sull'AI senza base concreta. Si citano fonti, si danno numeri, si mostra il ragionamento.</li>
+            <li><strong>Applicabilità immediata</strong>: ogni tool, script o automazione deve essere utile in produzione — non solo interessante in una demo.</li>
+            <li><strong>Onestà sui limiti</strong>: l'AI non è magia. Si dice anche quando uno strumento non vale la pena.</li>
+            <li><strong>Documentazione come standard</strong>: CLAUDE.md, README, commenti — scritti e mantenuti come parte integrante del codice.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- DESTRA -->
+      <div class="about-right">
+
+        <div class="form-terminal about-terminal">
+          <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">timeline.log</span>
+          </div>
+          <div class="terminal-body" style="min-height:auto; padding:1.4rem;">
+
+            <div class="tl-item">
+              <span class="tl-time">now</span>
+              <div class="tl-content">
+                <strong>AI/ML Engineering</strong>
+                <p>Data analytics con Python e SQL Server, automazioni LLM con LangChain e Claude API,
+                   MCP Server per integrare Claude Desktop in workflow aziendali.</p>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <span class="tl-time">2024</span>
+              <div class="tl-content">
+                <strong>Web Development &amp; Backend</strong>
+                <p>App Flask e Django con autenticazione, ORM SQLAlchemy, REST API.
+                   Containerizzazione Docker e CI/CD su GitHub Actions.</p>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <span class="tl-time">2023</span>
+              <div class="tl-content">
+                <strong>Ingegneria &amp; Design tecnico</strong>
+                <p>Progettazione 2D/3D con AutoCAD, Revit Architettura e Fusion 360.
+                   Stampa 3D (FDM/SLA/SLS), rendering fotorealistico, product design.
+                   Autodesk Certified User.</p>
+              </div>
+            </div>
+
+            <div class="about-meta">
+              <div class="meta-row">
+                <span class="meta-k">base</span>
+                <span class="meta-v">Italia</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-k">github</span>
+                <span class="meta-v">github.com/Auticad</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-k">disponibilità</span>
+                <span class="meta-v">aperto a collaborazioni</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="about-card">
+          <h2 class="about-title"><span class="prompt">$ </span>come uso Claude Code</h2>
+          <div class="about-steps">
+            <div class="about-step">
+              <span class="step-n">01</span>
+              <div class="step-txt">
+                <strong>CLAUDE.md come contratto</strong>
+                <p>Ogni progetto parte da un CLAUDE.md che definisce contesto, vincoli e convenzioni. Claude Code lo legge ad ogni sessione.</p>
+              </div>
+            </div>
+            <div class="about-step">
+              <span class="step-n">02</span>
+              <div class="step-txt">
+                <strong>Analisi prima del codice</strong>
+                <p>Chiedo a Claude Code di esplorare il codebase e proporre l'architettura prima di scrivere la prima riga.</p>
+              </div>
+            </div>
+            <div class="about-step">
+              <span class="step-n">03</span>
+              <div class="step-txt">
+                <strong>Test generati insieme</strong>
+                <p>I test non sono un afterthought: Claude Code li genera in parallelo all'implementazione.</p>
+              </div>
+            </div>
+            <div class="about-step">
+              <span class="step-n">04</span>
+              <div class="step-txt">
+                <strong>Claude Desktop per l'intero workflow</strong>
+                <p>MCP Filesystem, MCP Database e server personalizzati per connettere Claude Desktop a ogni sistema del progetto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="availability-box">
+          <span class="avail-dot"></span>
+          <div>
+            <strong>Aperto a nuove collaborazioni</strong>
+            <p>Rispondo entro 24 ore — pietro_cam@hotmail.com</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

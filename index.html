@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pietro Cammise — AI/ML Engineer</title>
+  <meta name="description" content="Pietro Cammise — AI/ML Engineer. Data analytics, automazioni Python, Claude Code e MCP Server.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="prompt">~/</span><span class="nav-name">pietro-cammise</span><span class="cursor-blink">▋</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="skills.html">skills</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </nav>
+
+  <main class="hero-section">
+
+    <div class="hero-left">
+      <div class="badge">Aperto a nuove collaborazioni</div>
+
+      <h1 class="hero-title">
+        <span class="line-1">AI/ML</span>
+        <span class="line-2">Engineer<span class="accent">.</span></span>
+      </h1>
+
+      <p class="hero-sub">
+        Lavoro su <span class="highlight">data analytics</span>,
+        <span class="highlight">automazioni Python</span> e
+        <span class="highlight">integrazione Claude AI</span>.
+        Stack: Python · SQL Server · dbt · Claude Code · MCP · Docker.
+        Obiettivo: aiutare i professionisti a usare l'AI per lavorare meglio — con rigore tecnico e zero hype.
+      </p>
+
+      <div class="hero-cta">
+        <a href="projects.html" class="btn-primary">Vedi Progetti</a>
+        <a href="contact.html" class="btn-secondary">Contattami</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-num" data-target="6">0</span>
+          <span class="stat-label">Repo pubblici</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span>
+          <span class="stat-label">Anni di attività</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span>
+          <span class="stat-label">Stack principali</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">pietro@local · claude + python</span>
+        </div>
+        <div class="terminal-body" id="terminal"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="tools-strip">
+    <div class="tools-label">Stack & Tools</div>
+    <div class="tools-scroll">
+      <span>Python</span><span>Claude Code</span><span>Claude Desktop</span>
+      <span>SQL Server</span><span>dbt</span><span>Power BI</span>
+      <span>LangChain</span><span>MCP</span><span>Docker</span>
+      <span>Flask</span><span>Django</span><span>Jupyter</span>
+      <!-- duplicato per loop -->
+      <span>Python</span><span>Claude Code</span><span>Claude Desktop</span>
+      <span>SQL Server</span><span>dbt</span><span>Power BI</span>
+      <span>LangChain</span><span>MCP</span><span>Docker</span>
+      <span>Flask</span><span>Django</span><span>Jupyter</span>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
